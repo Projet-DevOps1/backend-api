@@ -10,8 +10,7 @@ on:
 # ✅ Global Environment Variables
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/backend-api:${{ github.run_number }}
-  BACKEND_URL: "https://api.30.lebondeveloppeur.net"  # Health check endpoint of the backend API 
-  PORT: 3001  # Define a configurable port.
+
 
 
   
