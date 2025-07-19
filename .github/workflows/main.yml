@@ -99,7 +99,7 @@ jobs:
       - name: Run Snyk Vulnerability Scan
         run: snyk monitor --org-SamarHK123         
  
- # ✅ Build and Push Docker Image
+ # ✅ Build and Push Docker Image..
   build-and-push-job:
     runs-on: ubuntu-latest
     needs: [trivy-image-security-scan-job, snyk-code-security-scan-job]  # Wait for unit test job
