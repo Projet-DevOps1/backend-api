@@ -94,7 +94,7 @@ jobs:
         run: npm install -g snyk
 
       - name: Snyk Authentication
-        run: snyk auth ${{ secrets.  }}
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
 
       - name: Run Snyk Vulnerability Scan
         run: snyk monitor --org-SamarHK123         
